@@ -1,0 +1,17 @@
+<h1>アーティスト一覧</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>アーティスト名</th>
+  </tr>
+  <% @artists.each do |artist| %>
+  <tr>
+    <td>
+      <a href="/albums/<%= artist[:ArtistId] %>">
+        <%= artist[:ArtistId] %>
+      </a>
+    </td>
+    <td><%= artist[:Name]%></td>
+  </tr>
+  <% end %>
+</table>

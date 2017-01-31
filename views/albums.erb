@@ -1,0 +1,14 @@
+<h1>アーティスト名：<%= @artist[:Name] %>のアルバム</h1>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>タイトル</th>
+  </tr>
+  <% @albums.each do |album| %>
+  <tr>
+    <td><%= album[:AlbumId] %></td>
+    <td><%= album[:Title]%></td>
+  </tr>
+  <% end %>
+</table>
